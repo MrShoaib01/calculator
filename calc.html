@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+                .calc{
+                        margin: 25px;
+                        box-sizing: border-box;
+                        border: 2px solid black;
+                        width: 180px;
+                        height: 260px;
+                        align-items: center;
+                        background-image: url(cal.jpg);
+                        
+                }
+                button{
+                        height: 35px;
+                        width: 35px;
+                        text-align: center;
+                        margin: 2px;
+                        font-weight: bold;
+
+                }
+                input{
+                        text-align: right;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                }
+                .eq{
+                        width: 80px;
+                }
+                button:hover{
+                        color: gold;
+                        border-color: gold;
+                }
+               
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="calc">
+        <input type="text" id="display" placeholder="00">
+<br>
+        <button onclick="display.value+='9'">9</button>
+        <button onclick="display.value+='8'">8 </button>
+        <button onclick="display.value+='7'">7 </button>
+        <button onclick="display.value+='%'">% </button>
+<br>
+        <button onclick="display.value+='6'">6 </button>
+        <button onclick="display.value+='5'">5 </button>
+        <button onclick="display.value+='4'">4 </button>
+        <button onclick="display.value+='/'">/ </button>
+<br>
+        <button onclick="display.value+='3'">3 </button>
+        <button onclick="display.value+='2'">2 </button>
+        <button onclick="display.value+='1'">1 </button>
+        <button onclick="display.value+='*'">*</button>
+<br>
+        <button onclick="display.value+='0'">0 </button>
+        <button onclick="display.value+='+'">+ </button>
+        <button onclick="display.value+='-'">- </button>
+        <button onclick="display.value+='.'">.</button>
+        <br>
+        <button onclick="display.value=''">Ac</button>
+        <button onclick="display.value=display.value.slice(0,-1)"> Clr</button>
+        <button onclick="display.value=eval(display.value)" class="eq">=</button>
+    </div>
+    <p></p>
+    
+</body>
+</html>
